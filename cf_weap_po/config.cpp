@@ -23,11 +23,13 @@ class CfgWeapons {
 	class MGun;
 	
 	class LOP_Weap_LeeEnfield : srifle_EBR_F {
-		aiDispersionCoefY = 5;
-		aiDispersionCoefX = 5;
+		aiDispersionCoefY = 4;
+		aiDispersionCoefX = 4;
 		opticsZoomMin = 0.25;
 		opticsZoomMax = 1.25;
 		opticsZoomInit = 0.75;
+
+		modes[] = {"Single", "medium_optic2", "far_optic1","far_optic2"};
 		
 		class Single : Mode_SemiAuto {
 			minRange = 2;
@@ -93,8 +95,8 @@ class CfgWeapons {
 // Heavy Weapons - po_vehicles
 
 	class LOP_PKT : LMG_M200 {
-		aiDispersionCoefY = 9;
-		aiDispersionCoefX = 9;
+		aiDispersionCoefY = 7;
+		aiDispersionCoefX = 7;
 
 		modes[] = {"manual", "close", "short", "medium", "far"};
 		
